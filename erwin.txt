@@ -1,0 +1,3 @@
+%EntityProp(Subject Area)%Lookup(tableName.txt,%EntityName)%EntityProp(Entity Type)
+
+%Decl(test,_)%=(test,%Lookup(columnName.txt,%Attname))%If(%==(%Substr(%:test,1,1),_)){%Substr(%:test,2)}%else{%:test}
